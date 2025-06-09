@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Define que es un documento HTML5 -->
+<html lang="es"> <!-- Idioma español -->
+<head>
+    <!-- Configuración básica -->
+    <meta charset="UTF-8"> <!-- Soporta caracteres especiales (ñ, tildes) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptable a móviles -->
+    <title>Hello World</title> <!-- Título de la pestaña del navegador -->
+
+    <!-- Librerías externas -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS (diseño rápido) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Animaciones predefinidas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Iconos modernos -->
+
+    <!-- CSS personalizado (archivo local) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- Cuerpo de la página -->
+<body class="gradient-bg flex items-center justify-center h-screen">
+<!-- Tarjeta principal -->
+<div class="text-center p-8 bg-white rounded-lg shadow-xl card-hover max-w-md w-full mx-4">
+    <!-- Icono del mundo (animado) -->
+    <div class="mb-6">
+        <i class="fas fa-globe text-blue-500 text-6xl animate__animated animate__bounceIn"></i>
+    </div>
+
+    <!-- Título con efecto de gradiente -->
+    <h1 id="message" class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-4 animate__animated animate__fadeIn">
+        Cargando... <!-- Mensaje inicial -->
+    </h1>
+
+    <!-- Puntos de carga animados -->
+    <div id="loader" class="flex justify-center py-4">
+        <div class="w-3 h-3 bg-blue-500 rounded-full mx-1 pulse"></div>
+        <div class="w-3 h-3 bg-blue-500 rounded-full mx-1 pulse" style="animation-delay: 0.2s"></div>
+        <div class="w-3 h-3 bg-blue-500 rounded-full mx-1 pulse" style="animation-delay: 0.4s"></div>
+    </div>
+</div>
+
+<!-- JavaScript local -->
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* Fondo con degradado suave */
+.gradient-bg {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Efecto al pasar el cursor sobre la tarjeta */
+.card-hover {
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.card-hover:hover {
+    transform: translateY(-5px); /* Se eleva 5px */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+}
+
+/* Animación de parpadeo para los puntos de carga */
+.pulse {
+    animation: pulse 2s infinite; /* Se repite indefinidamente */
+}
+
+/* Define cómo funciona la animación */
+@keyframes pulse {
+    0% { opacity: 1; } /* Visible al 100% */
+    50% { opacity: 0.5; } /* Semitransparente */
+    100% { opacity: 1; } /* Vuelve a ser visible */
+}
