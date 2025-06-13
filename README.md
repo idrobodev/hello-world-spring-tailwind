@@ -11,8 +11,7 @@ A simple client-server application featuring a **Spring Boot** backend and a **T
   - [Installation](#installation)
 - [Running the Project](#running-the-project)
 - [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Architecture](#architecture)
+- [Architecture](#architecture-diagram)
 - [Screenshot](#screenshot)
 
 ---
